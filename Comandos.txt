@@ -1,0 +1,17 @@
+Comandos:
+
+Inicializa mosquito: 
+
+& "C:\Program Files\mosquitto\mosquitto.exe" -c "C:\Users\victo\Documents\UFU\9 Periodo\SCTR\ProjetoFinal\mosquitto.conf" -v
+
+
+####################################################################
+Inicializa mqttListener:
+
+node mqttListener.js
+
+
+####################################################################
+Ve dados enviados do esp:
+
+mpremote connect COM4 repl
