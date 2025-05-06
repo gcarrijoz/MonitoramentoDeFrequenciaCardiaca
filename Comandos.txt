@@ -1,8 +1,12 @@
 Comandos:
 
+
+mpremote fs cp config.py :config.py
+
+
 Inicializa mosquito: 
 
-& "C:\Program Files\mosquitto\mosquitto.exe" -c "C:\Users\victo\Documents\UFU\9 Periodo\SCTR\ProjetoFinal\mosquitto.conf" -v
+& "C:\Program Files\mosquitto\mosquitto.exe" -c "C:\Users\gabri\OneDrive\Desktop\UFU\STR\MonitoramentoDeFrequenciaCardiaca\mosquitto.conf" -v
 
 
 ####################################################################
