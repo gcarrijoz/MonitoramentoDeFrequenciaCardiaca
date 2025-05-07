@@ -30,15 +30,15 @@ def get_mac():
 
 # Função para ler e mapear o valor do potenciômetro para a faixa de BPM
 def ler_potenciometro():
-    pot = ADC(Pin(0))  # Usando GPIO 0 (ADC1_CH0 no ESP32-C3)
-    pot.atten(ADC.ATTN_11DB)  # Faixa de 0-3.3V
-    valor = pot.read()  # Lê valor de 0 a 4095 (12 bits)
+    pot = ADC(Pin(0)) 
+    pot.atten(ADC.ATTN_11DB) 
+    valor = pot.read() 
     bpm = (valor / 4095) * 180  # Mapeia para 0-180 BPM
     return round(bpm)
 
 # --- Programa principal ---
 if conecta_wifi():
-    client_id = get_mac().replace(":", "")  # remove os ":" para evitar problemas
+    client_id = get_mac().replace(":", "") 
     client = MQTTClient(client_id, MQTT_BROKER, port=MQTT_PORT)
 
     try:

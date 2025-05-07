@@ -1,8 +1,8 @@
 # esp32/config.py
 
 # Configurações de rede
-WIFI_SSID = "S23 de Gabriel"
-WIFI_PASSWORD = "12345678"
+WIFI_SSID = "Wifi"
+WIFI_PASSWORD = "senhawifi"
 
 # Configurações do MQTT
 MQTT_BROKER = '192.168.184.35'  # IP do seu computador (ou o IP do dispositivo que está executando o Mosquitto)
